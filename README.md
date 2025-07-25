@@ -1,6 +1,6 @@
 <img width="1920" height="860" alt="Screenshot (59)" src="https://github.com/user-attachments/assets/677a079a-afc0-42ad-98d2-7cb87bb43dc5" />
 
-#Persian Web UI | رابط کاربری ایرانی با HTML, CSS, JS
+Persian Web UI | رابط کاربری ایرانی با HTML, CSS, JS
 
 سلام! 👋  
 این پروژه یک رابط کاربری زیبا و کاربرپسند به زبان فارسی است که با استفاده از HTML ، CSS و JavaScript ساخته شده.  
