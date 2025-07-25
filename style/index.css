@@ -1,0 +1,448 @@
+@import url('../font/Vazir.ttf');
+@import url('../font/IranNastaliq.ttf');
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s, transform 0.5s; 
+}
+
+.spinner {
+    border: 7px solid #f3f3f3;
+    border-top: 7px solid #e4c400;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#loader .p-load {
+    margin-top: 20px;
+    color: #fff; 
+}
+#loader.hide {
+    opacity: 0;
+    transform: translateY(-100%); 
+}
+#full-page {
+    display: none;
+}
+#full-page.show {
+    display: block;
+}
+* {
+    font-family: 'vazir';   
+    
+}
+
+body {
+  direction: rtl;
+  color: #e4c400;
+  background-color: #333;
+  position: relative;
+  overflow: hidden; 
+}
+.bg-line {
+  position: absolute;
+  background-color: #e4c400;
+  height: 2px;
+  width: 80px;
+  opacity: 0.8;
+}
+.bg-line:nth-child(1) {
+  top: 20%;
+  left: 60%;
+  transform: rotate(-60deg);
+}
+.bg-line:nth-child(2) {
+  top: 50%;
+  left: 30%;
+  transform: rotate(-60deg);
+}
+.bg-line:nth-child(3) {
+  top: 10%;
+  left: 45%;
+  transform: rotate(-60deg);
+}
+.bg-line:nth-child(4) {
+  top: 40%;
+  left: 45%;
+  transform: rotate(-60deg);
+}
+.bg-line:nth-child(5) {
+  top: 60%;
+  left: 45%;
+  transform: rotate(-60deg);
+}
+.bg-line:nth-child(6) {
+  top: 51%;
+  left: 60%;
+  transform: rotate(-60deg);
+}
+.bg-line:nth-child(7) {
+  top: 20%;
+  left: 30%;
+  transform: rotate(-60deg);
+}
+.bg-line:nth-child(8) {
+  top: 60%;
+  left: 20%;
+  transform: rotate(-60deg);
+}
+.bg-line:nth-child(9) {
+  top: 40%;
+  left: 17%;
+  transform: rotate(-60deg);
+}
+#full-page {
+  height: 100vh;
+  overflow: hidden;
+  background-color: #333;
+  display: block;
+  margin-right: 150px;
+  margin-left: 150px;
+  margin-top: 80px;
+}
+.logo {
+    height: auto;
+    width: 50px;
+    margin-top: 7px;
+}
+.head {
+  padding: 10px;
+  border-radius: 15px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    background: #434343;
+}
+.text {
+    margin-top: 6vw;
+    border-right: 2px solid #e4c400;
+    padding-right: 20px;
+}
+.search-wrapper {
+    display: flex;
+  }
+
+  .search-input {
+    width: 0;
+    opacity: 0;
+    transition: width 0.3s ease, opacity 0.3s ease;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    background: transparent;
+    color: #eee;
+  }
+  .search-input:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+  .search-wrapper.active .search-input {
+    width: 100px;
+    opacity: 1;
+  }
+
+  .search-icon {
+    cursor: pointer;
+    font-size: 20px;
+    background: none;
+    border: none;
+  }
+
+  .icon-search {
+    height: auto;
+    width: 25px;
+    margin-top: 8px;
+  }
+.p {
+    font-size: 14px;
+    color: white;
+    font-weight: 330;
+    margin-bottom: -30px;
+}
+.p-name {
+    color: #e4c400;
+    font-family: 'vazir';
+    font-size: 25px;
+    font-weight: bold;
+}
+.p-tet {
+  margin-top: 10px;
+    font-size: 13px;
+    font-weight: 400;
+}
+.p-text {
+    margin-top: 35px;
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.a-text {
+    text-decoration: none;
+    color: #333;
+    background-color: #e4c400;
+    padding: 5px;
+    font-size: 10px;
+     padding-right: 10px;
+  padding-left: 10px;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+.a-text:hover {
+    background-color: white;
+}
+.p::selection {
+  background: #e4c400;
+  color: #333;
+}
+.div-img {
+  position: relative;
+  display: inline-block;
+  margin-right: 300px;
+  overflow: hidden;
+  border-radius: 150px;
+}
+.div-imgt {
+  position: relative;
+  display: inline-block;
+  margin-right: 300px;
+  margin-top: -30px;
+  overflow: hidden;
+  border-radius: 150px;
+}
+.des {
+  display: none;
+}
+
+.div-img::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0%; 
+  background-color: #e4c400;
+  z-index: 1;
+  transition: height 0.4s ease;
+  border-radius: 815px; 
+}
+.div-img .img-text, .text-img {
+  position: relative;
+  width: 230px;
+  height: auto;
+  z-index: 2;
+}
+.img-text {
+  padding-left: 30px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 80px;
+  height: auto;
+}
+.div-img:hover::before {
+  height: 100%;
+}
+.sp-nas {
+  font-family: 'IranNastaliq';
+  font-size: 35px;
+}
+.full-menu {
+      position: fixed;
+      top: -100%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #e4c400;
+      z-index: 9999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      transition: top 0.5s ease;
+    }
+    .full-menu.active {
+      top: 0;
+    }
+    .full-menu .a-menu {
+      font-size: 20px;
+      color: black;
+      text-decoration: none;
+      margin: 15px;
+      font-family: 'Vazir';
+      font-weight: 600;
+      transition: 0.3s;
+    }
+    .a-menu:hover {
+      color: white;
+    }
+    /* دکمه بستن */
+    .close-btn {
+      position: absolute;
+      top: 115px;
+      left: 186px;
+      background: none;
+      border: none;
+      
+      cursor: pointer;
+      color: black;
+    }
+    .icon-menu {
+      width: 24px;
+      height: 24px;
+    }
+
+
+    /* .social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons .a-social {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px; 
+  height: 30px;
+  border: 2px solid #e4c400;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.social-icons .a-social .img-social {
+  width: 20px;
+  height: auto;
+} */
+
+
+ /* آیکون های جدید بدون پس زمینه */
+/* آیکون های قبلی هم غیر فعال شده و بالاست  */
+
+
+.social-icons {
+  margin-top: 350px;
+  margin-right: 130px;
+}
+
+.social-icons .a-social {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px; 
+  height: 20px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.social-icons .a-social .img-social {
+  width: 19px;
+  height: auto;
+}
+
+/* end icon */
+
+.div-head {
+  margin-left: 1100px;
+}
+
+.a-li {
+    text-decoration: none;
+    background: #444;
+    color: #bbb;
+    font-size: 10px;
+    padding: 7px;
+  border-radius: 18px;
+  padding-right: 20px;
+  padding-left: 20px;
+  transition: 0.3s;
+}
+.a-li:hover {
+    background: #e4c400;
+    color: #333333;
+}
+.div-a {
+  margin-top: 100px;
+}
+
+@media (max-width: 768px) {
+  .div-head {
+    margin-left: 0;
+  }
+  body {
+    position: absolute;
+  }
+  #full-page {
+    margin: 0;
+    height: 730px;
+  }
+  .bg-line {
+    display: none;
+  }
+  .search-wrapper {
+    margin-right: 261px;
+  }
+  .close-btn {
+    top: 35px;
+  left: 26px;
+  }
+  .des {
+    display: inline-block;
+    margin: 0;
+  margin-right: -735px;
+  margin-top: 240px;
+  }
+  .text {
+    margin-top: 38vw;
+  }
+  .full-menu .a-menu {
+    font-size: 15px;
+  }
+  .img-text {
+    padding-top: 40px;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+    margin-bottom: 50px;
+  }
+  .logo-menu {
+    height: auto;
+    width: 100px;
+  }
+  .p-name {
+    font-size: 12px;
+  }
+  .sp-nas {
+    font-size: 25px;
+  }
+  .p-tet {
+    font-size: 11px;
+  }
+  .p-text {
+    font-size: 11px;
+  }
+  .social-icons {
+    margin-right: -20px;
+    margin-top: 315px;
+    margin-left: 10px;
+  }
+  .div-a {
+  margin-top: 50px;
+}
+}

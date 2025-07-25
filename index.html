@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javad Taghizadeh</title>
+  <link rel="stylesheet" href="style/index.css">
+  <link rel="stylesheet" href="font/Vazir.ttf">
+  <link rel="stylesheet" href="font/IranNastaliq.ttf">
+  <link rel="icon" href="img/logo-tow.png" size="1*1">
+</head>
+<body>
+  <div id="loader">
+    <div class="spinner"></div>
+    <p class="p-load">در حال بارگذاری ...</p>
+  </div>
+
+  <div id="full-page">
+    <div class="bg-line"></div>
+    <div class="bg-line"></div>
+    <div class="bg-line"></div>
+    <div class="bg-line"></div>
+    <div class="bg-line"></div>
+    <div class="bg-line" style="width: 60px;"></div>
+    <div class="bg-line" style="width: 40px;"></div>
+    <div class="bg-line" style="width: 20px;"></div>
+    <div class="bg-line" style="width: 60px;"></div>
+    <div class="head">
+      <div class="div-head"><img class="logo" src="img/icon-logo.png" alt="logo"></div>
+      <div class="search-wrapper" id="searchWrapper">
+        <div>
+          <button class="search-icon" onclick="togglemenu()">
+            <img id="menuIcon" src="img/icon/menu.png" alt="icon" class="icon-search icon-menu">
+          </button>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div style="display: flex; margin-top: -20px;">
+        <div class="text">
+          <p class="p p-hi">سلام؛</p>
+          <p class="p p-name"><span class="sp-nas">محمد جواد تقی زاده</span><span style="color: white;"> هستم</span></p>
+          <p class="p p-tet">فعال در حوزه <span style="font-weight: bold;">گرافیک، تبلیغات ، برنامه نویسی وب و دیجیتال مارکتینگ</span> </p>
+          <p class="p p-text">به وب‌سایت من خوش‌ آمدید!</p>
+          <a class="a-text" href="about.html">درباره من</a>
+          <!-- <div class="social-icons">
+            <a class="a-social" href="https://www.instagram.com/javad_taghizadeh02?igsh=cTZ3NTd3aXg3NDB2"><img class="img-social" src="img/icon/instagram.png" alt="instagram"></a>
+            <a class="a-social" href="https://t.me/Javad_taghizade02"><img class="img-social" src="img/icon/telegram_app.png" alt="telegram"></a>
+            <a class="a-social" href="tel:09901762984"><img class="img-social" src="img/icon/phone.png" alt="phone"></a>
+          </div> -->
+          <div class="div-a">
+            <a class="a-li" href="#">نمونه‌کارها و پروژه ها</a>
+            <a class="a-li" href="#">مقالات</a>
+          </div>
+        </div>
+        
+        <div class="div-img">
+          <img style="width: 300px;" class="img-text" src="img/logo-png-tow.png" alt="">
+        </div>
+        <div class="div-imgt des">
+          <img style="width: 200px;" class="img-text" src="img/logo-png.png" alt="">
+        </div>
+        <div class="social-icons">
+          <div style="margin-bottom: 3px;"><a title="Instagram" class="a-social" href="https://www.instagram.com/javad_taghizadeh02?igsh=cTZ3NTd3aXg3NDB2"><img style="width: 22px;" class="img-social" src="img/icon/instagram_copy.png" alt="instagram"></a></div>
+          <div style="margin-bottom: 3px;"><a title="Telegram" class="a-social" href="https://t.me/Javad_taghizade02"><img class="img-social" src="img/icon/telegram_app_copy.png" alt="telegram"></a></div>
+          <div><a title="Phone" class="a-social" href="tel:09901762984"><img class="img-social" src="img/icon/phone_copy.png" alt="phone"></a></div>
+          </div>
+      </div>
+    </div>
+
+    <div id="menu" class="full-menu">
+      <button class="close-btn" onclick="togglemenu()"><img style="height: auto; width: 40px;" src="img/icon/cancel.png" alt="icon" class="icon-search"></button>
+      <a class="a-menu" href="index.html">خانه</a>
+      <a class="a-menu" href="about.html">درباره من</a>
+      <a class="a-menu" href="#">نمونه‌کارها</a>
+      <a class="a-menu" href="#">تماس با من</a>
+    </div>
+
+    <script>
+document.addEventListener("DOMContentLoaded", function() {
+
+    setTimeout(function() {
+        document.getElementById('loader').classList.add('hide');
+        document.getElementById('full-page').classList.add('show');
+    }, 3000); 
+});
+
+      function toggleSearch() {
+        document.getElementById('searchWrapper').classList.toggle('active');
+        document.getElementById('searchInput').focus();
+      }
+
+      function togglemenu() {
+        var menu = document.getElementById('menu');
+        var icon = document.getElementById('menuIcon');
+        menu.classList.toggle('active');
+
+        if (menu.classList.contains('active')) {
+          icon.style.visibility = 'hidden';
+        } else {
+          icon.style.visibility = 'visible';
+        }
+      }
+    </script>
+</body>
+</html>
