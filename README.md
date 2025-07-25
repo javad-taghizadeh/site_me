@@ -1,9 +1,5 @@
 <img width="1920" height="860" alt="Screenshot (59)" src="https://github.com/user-attachments/assets/677a079a-afc0-42ad-98d2-7cb87bb43dc5" />
 
-📱mobile-site📱
-
-<img width="1516" height="2663" alt="Screen Shot 2025-07-25 at 09 12 49" src="https://github.com/user-attachments/assets/59dfc84e-b6da-4801-90d7-aa3f490ecccc" />
-
 # 🇮🇷 Persian Web UI | رابط کاربری ایرانی با HTML, CSS, JS
 
 سلام! 👋  
